@@ -13,7 +13,7 @@ Multiclass classification of wine quality (scores 3 to 9) from 11 physicochemica
 
 | | |
 |---|---|
-| **Context** |  Data Mining and Machine Learning · Classification Project · Group of 4}} |
+| **Context** |  Data Mining and Machine Learning · Classification Project · Group of 4 |
 | **Period** | Spring 2026 |
 | **Data** | [UCI Wine Quality](https://archive.ics.uci.edu/dataset/186/wine+quality) (Cortez et al., 2009): 1,599 red + 4,898 white wines |
 | **Tech** | Python, scikit-learn, pandas, matplotlib, seaborn |
