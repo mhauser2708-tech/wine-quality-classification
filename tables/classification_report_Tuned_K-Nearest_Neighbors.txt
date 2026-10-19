@@ -1,0 +1,16 @@
+--- Tuned K-Nearest Neighbors ---
+Accuracy: 0.6700
+Classification Report:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00         6
+           4       0.60      0.14      0.23        43
+           5       0.70      0.72      0.71       428
+           6       0.67      0.72      0.69       567
+           7       0.62      0.63      0.62       216
+           8       0.70      0.36      0.47        39
+           9       0.00      0.00      0.00         1
+
+    accuracy                           0.67      1300
+   macro avg       0.47      0.37      0.39      1300
+weighted avg       0.67      0.67      0.66      1300

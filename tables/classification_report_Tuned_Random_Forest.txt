@@ -1,0 +1,16 @@
+--- Tuned Random Forest ---
+Accuracy: 0.6915
+Classification Report:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00         6
+           4       0.57      0.09      0.16        43
+           5       0.74      0.72      0.73       428
+           6       0.67      0.79      0.72       567
+           7       0.66      0.58      0.62       216
+           8       0.93      0.36      0.52        39
+           9       0.00      0.00      0.00         1
+
+    accuracy                           0.69      1300
+   macro avg       0.51      0.36      0.39      1300
+weighted avg       0.69      0.69      0.68      1300

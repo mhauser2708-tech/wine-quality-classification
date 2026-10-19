@@ -1,0 +1,28 @@
+Rows: 6497, exact duplicate rows in the full data: 1177
+Test rows with an identical feature vector in the training set: 357 of 1300 (27.5%)
+
+Best hyperparameters (3-fold CV on the training set)
+  Tuned Random Forest: {'max_depth': None, 'n_estimators': 100}  (CV accuracy 0.6536)
+  Tuned KNN: {'n_neighbors': 9, 'weights': 'distance'}  (CV accuracy 0.6265)
+  Tuned SVM: {'C': 10, 'gamma': 'auto'}  (CV accuracy 0.5853)
+  Tuned Decision Tree: {'max_depth': None, 'min_samples_leaf': 1}  (CV accuracy 0.5626)
+
+Model                      Accuracy           95% CI  Macro-F1  Acc. (in train)  Acc. (not in train)
+KNN (baseline)               0.5585  [0.531, 0.585]     0.281            0.714                0.499
+SVM (baseline)               0.5723  [0.545, 0.599]     0.235            0.597                0.563
+Decision Tree (baseline)     0.5954  [0.568, 0.622]     0.329            1.000                0.442
+Tuned Random Forest          0.6915  [0.666, 0.716]     0.393            1.000                0.575
+Tuned KNN                    0.6700  [0.644, 0.695]     0.389            1.000                0.545
+Tuned SVM                    0.5854  [0.558, 0.612]     0.292            0.661                0.557
+Tuned Decision Tree          0.5954  [0.568, 0.622]     0.329            1.000                0.442
+
+Paired comparison on the test set (exact McNemar test)
+  Tuned Random Forest vs Tuned KNN: only first correct 125, only second correct 97, p = 0.0697
+  Tuned KNN vs Tuned SVM: only first correct 230, only second correct 120, p = 0.0000
+  Tuned Random Forest vs Decision Tree (baseline): only first correct 225, only second correct 100, p = 0.0000
+
+Sensitivity to hyperparameters: mean CV accuracy over the grid (min / max / range)
+  Tuned Random Forest    0.6179 / 0.6536 / 0.0358  (6 settings)
+  Tuned KNN              0.5357 / 0.6265 / 0.0908  (8 settings)
+  Tuned SVM              0.5368 / 0.5853 / 0.0485  (6 settings)
+  Tuned Decision Tree    0.5226 / 0.5626 / 0.0400  (12 settings)
